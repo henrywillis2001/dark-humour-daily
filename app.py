@@ -16,11 +16,10 @@ def home():
     thought = conn.execute('SELECT thought FROM thoughts ORDER BY id DESC LIMIT 1').fetchone()
     conn.close()
 
-    # Get today's date in a readable format
     current_date = datetime.now().strftime("%B %d, %Y")
 
     return render_template('index.html', thought=thought['thought'] if thought else "No joke available!", current_date=current_date)
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))  # Use the PORT environment variable or default to 5000
-    app.run(host='0.0.0.0', port=port, debug=False)  # Bind to all network interfaces and specified port
+    port = int(os.environ.get('PORT', 5000))  # Use PORT environment variable
+    app.run(host='0.0.0.0', port=port, debug=False)  # Bind to all network interfaces
