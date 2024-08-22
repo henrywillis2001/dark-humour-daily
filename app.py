@@ -40,3 +40,5 @@ if __name__ == "__main__":
 
 
 """https://dark-humour-daily.onrender.com/"""
+
+"""curl -X POST https://dark-humour-daily.onrender.com/update_joke -d "joke=Happy%20endings%20are%20a%20lot%20like%20my%20cooking,%20it's%20always%20better%20when%20my%20mom%20does%20it%20for%20me"""
