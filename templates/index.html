@@ -34,12 +34,16 @@
             left: 0;
             border-bottom: 2px solid #444444; /* Subtle border for distinction */
             z-index: 1000; /* Ensure header is above other content */
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
 
         .page-header h1 {
             font-size: 2em;
             margin: 0;
             letter-spacing: 1px; /* Slight spacing for a modern touch */
+            display: inline-block; /* Adjust width based on content */
+            max-width: 100%; /* Prevent overflow */
+            padding: 0 20px; /* Space around text */
         }
 
         /* Main content styling */
@@ -95,6 +99,7 @@
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 1.5em;
+                padding: 0 10px; /* Adjust padding for smaller screens */
             }
 
             .container h2 {
