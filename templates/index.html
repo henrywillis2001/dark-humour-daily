@@ -24,28 +24,23 @@
 
         /* Page header styling */
         .page-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+            width: 100%;
             background-color: #333333; /* Slightly darker grey for the header */
             color: #ffffff; /* White text color */
-            width: 100%;
+            text-align: center; /* Center text horizontally */
+            padding: 20px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
             position: fixed;
             top: 0;
             left: 0;
             border-bottom: 2px solid #444444; /* Subtle border for distinction */
-            z-index: 1000; /* Ensure header is above other content */
             box-sizing: border-box; /* Ensure padding is included in width */
-            text-align: center; /* Center text horizontally */
         }
 
         .page-header h1 {
             font-size: 2em;
             margin: 0;
             letter-spacing: 1px; /* Slight spacing for a modern touch */
-            display: inline-block; /* Adjust width based on content */
         }
 
         /* Main content styling */
@@ -69,7 +64,6 @@
             font-size: 2em;
             margin-bottom: 10px;
             color: #ffffff; /* Pure white for the header */
-            position: relative;
             font-weight: 700; /* Bold header text */
         }
 
