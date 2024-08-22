@@ -19,11 +19,14 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh; /* Full viewport height */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         /* Page header styling */
         .page-header {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
             background-color: #333333; /* Slightly darker grey for the header */
             color: #ffffff; /* White text color */
@@ -35,6 +38,7 @@
             border-bottom: 2px solid #444444; /* Subtle border for distinction */
             z-index: 1000; /* Ensure header is above other content */
             box-sizing: border-box; /* Ensure padding is included in width */
+            text-align: center; /* Center text horizontally */
         }
 
         .page-header h1 {
@@ -42,8 +46,6 @@
             margin: 0;
             letter-spacing: 1px; /* Slight spacing for a modern touch */
             display: inline-block; /* Adjust width based on content */
-            max-width: 100%; /* Prevent overflow */
-            padding: 0 20px; /* Space around text */
         }
 
         /* Main content styling */
